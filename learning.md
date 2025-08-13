@@ -1,2 +1,3 @@
-## Certified Entry-Level Python Programmer 
-play with variables, strings, numbers, literals, operators
+# Certified Entry-Level Python Programmer Linkedin course
+
+## play with variables, strings, numbers, literals, operators

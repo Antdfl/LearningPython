@@ -3,10 +3,10 @@
 #name = """Antonio 
 #é un grande
 #"""
-from test.test_index import newstyle
+
 
 #print(name)
-# plus is a string concatenator
+# plus is a string concat
 # name = "Max is a prepared"
 # name = name + " instructor"
 # print(name) 
