@@ -1,15 +1,23 @@
 # Multi-line string
 # You need to use triple quotes or triple single quotes
-name = """Antonio 
-é un grande
-"""
+#name = """Antonio 
+#é un grande
+#"""
+from test.test_index import newstyle
 
-print(name)
+#print(name)
 # plus is a string concatenator
-name = "Antonio"
-name = name + " e un grande"
-#print(name) 
-print(name*10) 
+# name = "Max is a prepared"
+# name = name + " instructor"
+# print(name) 
+#print(name*10) 
 
-#test update
-print("This is a test update to the file.")
+#use of other string functions
+message = "  Normal message   "
+print(message.strip())
+
+new_message = message.replace("message", "nuovo fatticcio")
+print(new_message)
+print(new_message.find("nuovo"))
+# length = len(message)
+# print(length)
