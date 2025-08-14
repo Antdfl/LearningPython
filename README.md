@@ -14,7 +14,7 @@ Relationships.
 
 ## LearningPython
 
-In this project, I'm tracking all the learning objects that I'm learning.
+In this project, I'm tracking all the learning objects that I'm learning in Python.
 
 ### Learning
 
