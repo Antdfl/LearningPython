@@ -1,3 +1,6 @@
+import os
+os.system('cls' if os.name == 'nt' else 'clear')    
+
 endOfProgram = False
 while not endOfProgram:
     name = input("Name: ")
