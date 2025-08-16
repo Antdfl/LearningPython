@@ -13,3 +13,18 @@
 - Receive input data from the console
 
 ## 2. Control Flow: Conditional Blocks and Loops
+
+- Using block conditionals blocks with if
+- Using the while loop
+- Using the for loop
+- Changing the natural flow in loops (break, continue)
+- Using else with loops
+- Nesting loops and conditions
+
+## 3. Data collections: Lists, Tuples, Dictionaries
+
+- Introduction to data collections
+- Working with lists
+- Advanced techniques with lists
+- Using tuples
+- 
