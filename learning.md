@@ -27,4 +27,15 @@
 - Working with lists
 - Advanced techniques with lists
 - Using tuples
-- 
+- Working with dictionaries
+- Iterating through dictionaries
+- Mixing data collections
+
+## 4. Functions and Exceptions
+
+- Introduction to modularization
+- Modularize your code with functions
+- Defining parameters and arguments
+- Using and creating generators
+- Introduction to exceptions
+- Using exceptions and try-except
