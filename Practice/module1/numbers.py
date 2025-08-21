@@ -9,3 +9,5 @@ a=0.1
 b=0.2
 sum = a + b
 print("This is the sum:", sum)
+y=2+3*5.
+print("This is the value of y:", y)
