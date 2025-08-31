@@ -1,4 +1,4 @@
-import math
+import sys
 
-for name in dir(math):
-    print(name, end="\t")
+for p in sys.path:
+    print(p)
