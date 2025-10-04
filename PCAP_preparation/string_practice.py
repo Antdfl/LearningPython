@@ -72,11 +72,22 @@ digits = {
     ]
 }
 
-def display_digit(digit):
-    pattern = digits.get(digit, ["   "] * 5)
-    for line in pattern:
+# def display_digit(digit):
+#     pattern = digits.get(digit, ["   "] * 5)
+#     for line in pattern:
+#         print(line)
+
+# I need a function that take in input and display the corresponding digit pattern
+def print_number(number):
+    for row in range(5):
+        line = ""
+        for digit in number:
+            pattern = digits.get(digit, ["   "] * 5)
+            line += pattern[row] + " "
         print(line)
 
 # Example usage:
-num = input("Enter a digit (0-9): ")
-display_digit(num)
+num = input("Enter a number (123): ")
+print_number(num)
+# Example usage:
+# num = input("Enter a digit (0-9): ")
