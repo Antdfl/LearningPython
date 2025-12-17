@@ -8,6 +8,28 @@
 #     new_colour = (r, g, b)
 #     rgb_colors.append(new_colour)
 # print(rgb_colors)
+"""
+This code creates a Hirst painting generator using Python's turtle graphics library. Here's what it does:
+
+1. **Commented section**: Extracts colors from an image using colorgram (currently disabled)
+
+2. **Color list**: Predefined RGB tuples of colors extracted from the Hirst painting
+
+3. **Turtle setup**: 
+    - Creates a turtle named `tim`
+    - Sets speed to fastest
+    - Positions it at coordinates (350 units back, 0 forward) facing east
+    - Hides the turtle cursor
+
+4. **`hirst_()` function**: Draws a 10×10 grid of colored dots
+    - Cycles through the color list
+    - Draws 20-pixel dots spaced 50 pixels apart
+    - After every 10 dots, moves down 50 pixels and resets to draw the next row
+
+5. **Execution**: Calls `hirst_(100)` to draw 100 dots in a grid pattern
+
+The code at `$PLACEHOLDER$` should be empty—it's just marking where the commented color extraction section ends.
+"""
 import turtle as t
 t.colormode(255)
 
