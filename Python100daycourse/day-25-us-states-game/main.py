@@ -2,13 +2,13 @@ import turtle
 import pandas
 screen = turtle.Screen()
 screen.title("US State Game")
-image = "blank_states_img.gif"
+image = "e:\\code\\LearningPython\\Python100daycourse\\day-25-us-states-game\\blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 #def get_mouse_click_coor(x,y):
 #    print(x,y)
 #turtle.onscreenclick(get_mouse_click_coor)
-data = pandas.read_csv("50_states.csv")
+data = pandas.read_csv("e:\\code\\LearningPython\\Python100daycourse\\day-25-us-states-game\\50_states.csv")
 guessed_states= []
 num_guesses = 0
 all_states = data.state.to_list()
@@ -26,7 +26,7 @@ while len(guessed_states) < 50:
         #         states_to_learn.append(state)
         states_to_learn = [state for state in all_states if state not in guessed_states]
         new_data = pandas.DataFrame(states_to_learn, columns=["State"])
-        new_data.to_csv("States_to_learn.csv")
+        new_data.to_csv("e:\\code\\LearningPython\\Python100daycourse\\day-25-us-states-game\\States_to_learn.csv")
         break
     if answer_state in all_states:
         state_data = data[data.state == answer_state]
