@@ -1,6 +1,8 @@
 import pandas as pd
+import os
+os.system('cls')
 
-nato_df = pd.read_csv('nato_phonetic_alphabet.csv')
+nato_df = pd.read_csv('./NATO-alphabet/nato_phonetic_alphabet.csv')
 #TODO 1. Create a dictionary in this format:
 #{"A": "Alfa", "B": "Bravo"}
 phonetic_dict = {row.letter:row.code for (index, row) in nato_df.iterrows()}
