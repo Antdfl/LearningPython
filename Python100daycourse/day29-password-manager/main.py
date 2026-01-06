@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Canvas, PhotoImage, Label, Entry, Button, END
 from tkinter import messagebox
 import random
 import pyperclip

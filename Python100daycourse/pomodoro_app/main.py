@@ -10,12 +10,12 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
-timer = None
+#timer = None
 
 # ---------------------------- TIMER RESET ------------------------------- # 
 def reset_timer():
     global reps, timer
-    window.after_cancel(timer) # noqa
+    window.after_cancel(timer) # pyright: ignore[reportOptionalMemberAccess]
     reps = 0
     lbl_title.config(text="Timer", fg=GREEN)
     canvas.itemconfig(timer_text, text="00:00")
@@ -72,7 +72,7 @@ window.title("Pomodoro")
 window.config(padx=100, pady=50, bg=YELLOW)
 
 canvas = tk.Canvas(window, width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = tk.PhotoImage(file="tomato.png")
+tomato_img = tk.PhotoImage(file="./pomodoro_app/tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 canvas.grid(row=1, column=1)
 
