@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import *     # pyright:ignore
 from tkinter import messagebox
 import random
 import json
