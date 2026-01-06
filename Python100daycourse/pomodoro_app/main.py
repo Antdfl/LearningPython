@@ -1,5 +1,15 @@
 import tkinter as tk
 import math
+import os
+import sys
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS # pyright: ignore[reportOptionalMemberAccess]
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -72,7 +82,11 @@ window.title("Pomodoro")
 window.config(padx=100, pady=50, bg=YELLOW)
 
 canvas = tk.Canvas(window, width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = tk.PhotoImage(file="./pomodoro_app/tomato.png")
+try:
+    tomato_img = tk.PhotoImage(file=resource_path("tomato.png"))
+except tk.TclError:
+    tomato_img = tk.PhotoImage(file="./pomodoro_app/tomato.png")
+
 canvas.create_image(100, 112, image=tomato_img)
 canvas.grid(row=1, column=1)
 
