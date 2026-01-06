@@ -5,7 +5,7 @@ import sys
 
 def resource_path(relative_path):
     try:
-        base_path = sys._MEIPASS # pyright: ignore[reportOptionalMemberAccess]
+        base_path = sys._MEIPASS # pyright:ignore
     except Exception:
         base_path = os.path.abspath(".")
 
